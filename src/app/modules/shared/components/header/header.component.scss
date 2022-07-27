@@ -1,0 +1,56 @@
+@import "./src/shared.scss";
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white-color;
+  padding-top: 20px;
+}
+
+.custom-nav {
+  background-color: transparent;
+  z-index: 1001;
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+  max-width: $big-max-width;
+  width: 100%;
+}
+
+.custom-logo {
+  height: 60px;
+}
+
+.title {
+  margin-left: 10px;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: $base-color;
+}
+
+.navbar-end {
+  display: flex;
+  align-items: center;
+}
+
+.btn-contact {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0.7rem;
+  background-color: #0000;
+  color: $base-color;
+  border-radius: 9999px;
+  border: 2px solid $base-color;
+  padding-left: calc(1em + 0.25em);
+  padding-right: calc(1em + 0.25em);
+}
+
+.is-outlined:hover {
+  background-color: $base-color;
+  border-color: $base-color;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
